@@ -1,0 +1,82 @@
+Basic Commands Of Linux:
+
+#hostnamectl set-hostname
+using this command you can change your hostname
+
+#ls
+Using ls command you can list the files and directories
+
+#ls -l
+using this comamnd you can see long listing format of files and directories
+
+#touch
+using touch command you can create empty file and also can change timestamp of the file
+
+#mkdir
+using mkdir command you can make directory(folder)
+
+#rmdir
+using rmdir command you can remove only empty directory
+
+#rm -rf
+using this command you can remove directory forcefully(non-empty directory)
+
+#pwd
+this command shows the present working directory
+
+#cd
+using this command you can change your directory
+
+#id
+using this command you can see the identity of user
+
+#cat
+using this command you can print content of any file on your terminal
+
+#head
+using this command you can see top 10 lines of file
+
+#tail
+using this command you can see bottom 10 lines of file
+
+#tree
+using this command you can check how many directory in the directory
+
+#useradd
+using this command you can add new user
+
+#userdel
+using this command you can delete your user without home directory
+
+#userdel -r
+using this command you can delete your user with home directory
+
+#su -
+using this command you can switch to another user
+
+#logout
+using this command you can logout from your current user
+
+#passwd
+using this command you can change password of your user 
+
+Some Basic points:
+
+#man
+using man page you can see all the information regarding commands
+
+#vim
+text editor tool
+-there are many editor tools like vi,nano and gedit
+
+#wq!
+save and quit
+
+#q!
+quit without saving
+
+#clear
+to clear the screen or you can use(ctrl+l)
+
+#man (manual page)
+you can see the description of commands
