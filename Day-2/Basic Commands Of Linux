@@ -1,82 +1,104 @@
-Basic Commands Of Linux:
+### Basic Linux Commands:
 
-#hostnamectl set-hostname
-using this command you can change your hostname
+# hostnamectl set-hostname
+# "Use this command to change your system's hostname."
+hostnamectl set-hostname new-hostname
 
-#ls
-Using ls command you can list the files and directories
+# ls
+# "This command lists the files and directories in the current directory."
+ls
 
-#ls -l
-using this comamnd you can see long listing format of files and directories
+# ls -l
+# "Use this command to display a long listing format of files and directories, showing more details."
+ls -l
 
-#touch
-using touch command you can create empty file and also can change timestamp of the file
+# touch
+# "The touch command creates an empty file or updates the timestamp of an existing file."
+touch newfile.txt
 
-#mkdir
-using mkdir command you can make directory(folder)
+# mkdir
+# "Use mkdir to create a new directory (folder)."
+mkdir new_directory
 
-#rmdir
-using rmdir command you can remove only empty directory
+# rmdir
+# "The rmdir command removes an empty directory."
+rmdir empty_directory
 
-#rm -rf
-using this command you can remove directory forcefully(non-empty directory)
+# rm -rf
+# "Use rm -rf to forcefully remove a non-empty directory and its contents."
+rm -rf directory_to_remove
 
-#pwd
-this command shows the present working directory
+# pwd
+# "The pwd command displays the current working directory."
+pwd
 
-#cd
-using this command you can change your directory
+# cd
+# "Use cd to change your current directory."
+cd /path/to/directory
 
-#id
-using this command you can see the identity of user
+# id
+# "The id command shows the identity of the current user."
+id
 
-#cat
-using this command you can print content of any file on your terminal
+# cat
+# "Use cat to display the contents of a file on the terminal."
+cat file.txt
 
-#head
-using this command you can see top 10 lines of file
+# head
+# "The head command shows the first 10 lines of a file."
+head file.txt
 
-#tail
-using this command you can see bottom 10 lines of file
+# tail
+# "Use tail to view the last 10 lines of a file."
+tail file.txt
 
-#tree
-using this command you can check how many directory in the directory
+# tree
+# "The tree command displays the directory structure in a tree format."
+tree
 
-#useradd
-using this command you can add new user
+# useradd
+# "Use useradd to create a new user."
+useradd new_user
 
-#userdel
-using this command you can delete your user without home directory
+# userdel
+# "The userdel command deletes a user, but leaves their home directory intact."
+userdel user_to_delete
 
-#userdel -r
-using this command you can delete your user with home directory
+# userdel -r
+# "Use userdel -r to delete a user along with their home directory."
+userdel -r user_to_delete_and_home
 
-#su -
-using this command you can switch to another user
+# su -
+# "The su - command allows you to switch to another user account."
+su - other_user
 
-#logout
-using this command you can logout from your current user
+# logout
+# "Use logout to sign out of the current user session."
+logout
 
-#passwd
-using this command you can change password of your user 
+# passwd
+# "Use passwd to change the password of your user account."
+passwd
 
-Some Basic points:
+### Some Basic Points:
 
-#man
-using man page you can see all the information regarding commands
+# man
+# "Use the man command to access the manual page, which provides detailed information about other commands."
+man ls
 
-#vim
-text editor tool
--there are many editor tools like vi,nano and gedit
+# vim
+# "Vim is a text editor. Other text editors include vi, nano, and gedit."
+vim file.txt
 
-#wq!
-save and quit
+# wq!
+# "In vim, use wq! to save and quit the editor."
+# Open Vim and type `:wq!` to save and quit.
 
-#q!
-quit without saving
+# q!
+# "In vim, use q! to quit the editor without saving any changes."
+# Open Vim and type `:q!` to quit without saving.
 
-#clear
-to clear the screen or you can use(ctrl+l)
+# clear
+# "Use clear to clear the terminal screen, or use Ctrl+L as a shortcut."
+clear
 
-#man (manual page)
-you can see the description of commands
