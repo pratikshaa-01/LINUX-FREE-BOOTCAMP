@@ -1,0 +1,76 @@
+#Useradministration in detail
+###Types of Users in Your System:
+
+1)Root (Privileged User)
+2)Local User
+3)System User
+
+#Shell Types for Users:
+
+Root → /bin/bash
+Local User → /bin/bash
+System User → /sbin/nologin
+
+#Examples of Shells:
+
+Linux → bash shell
+Windows → PowerShell
+Unix → Bourne shell
+
+#To View the Current Shell of Your System:
+echo $SHELL
+
+Use the appropriate command for your system to check the current shell.
+
+###Commands for Managing Groups:
+
+#groupadd
+Use this command to add a new group.
+
+#groupdel
+Use this command to delete an existing group.
+
+#Adding a User with useradd:
+When a user is added using the useradd command, several system files are modified (Important for Interviews):
+
+/etc/passwd: A new entry is added.
+/etc/shadow: A new entry is created for the user’s password.
+/etc/group: The user is added to a group.
+/etc/gshadow: Shadow group information is updated.
+/home/user: A home directory is created for the user.
+/var/spool/mail/user: A mail spool for the user is created.
+Skeleton Files: Default configuration files (from /etc/skel) are copied to the user’s home directory.
+
+###Advanced User Administration Commands:
+
+#usermod
+Use this command to modify a user's information.
+
+#usermod -g
+Change the user's primary group.
+
+#usermod -aG
+Add the user to a secondary group.
+
+#usermod -s
+Change the user's default shell.
+
+#usermod -c
+Modify the user's comment field (e.g., full name or description).
+
+#usermod -u
+Change the user's UID.
+
+###sudo (Super User Do):
+
+#There are two methods to grant a user sudo permissions:
+
+1)Using the Wheel Group
+Add the user to the wheel group to grant sudo permissions.
+Example:
+usermod -aG wheel Pratiksha
+
+2)Editing the /etc/sudoers File
+You can manually add an entry to the /etc/sudoers file:
+ALL=(ALL) ALL
+
