@@ -1,9 +1,9 @@
 #Useradministration in detail
 ###Types of Users in Your System:
 
-1)Root (Privileged User)
-2)Local User
-3)System User
+1)Root (Privileged User)              [0]
+2)Local User                          [1000-infinity]
+3)System User                         [1-999]
 
 #Shell Types for Users:
 
@@ -30,7 +30,7 @@ Use this command to add a new group.
 #groupdel
 Use this command to delete an existing group.
 
-#Adding a User with useradd:
+#Adding a User with useradd:   
 When a user is added using the useradd command, several system files are modified (Important for Interviews):
 
 /etc/passwd: A new entry is added.
@@ -41,36 +41,8 @@ When a user is added using the useradd command, several system files are modifie
 /var/spool/mail/user: A mail spool for the user is created.
 Skeleton Files: Default configuration files (from /etc/skel) are copied to the user’s home directory.
 
-###Advanced User Administration Commands:
+###What is difference between su and su-  ??   (IMP for Interview)
+su only changes the identity of the user.
+su - provides the full login environment with the correct shell and home directory.
 
-#usermod
-Use this command to modify a user's information.
-
-#usermod -g
-Change the user's primary group.
-
-#usermod -aG
-Add the user to a secondary group.
-
-#usermod -s
-Change the user's default shell.
-
-#usermod -c
-Modify the user's comment field (e.g., full name or description).
-
-#usermod -u
-Change the user's UID.
-
-###sudo (Super User Do):
-
-#There are two methods to grant a user sudo permissions:
-
-1)Using the Wheel Group
-Add the user to the wheel group to grant sudo permissions.
-Example:
-usermod -aG wheel Pratiksha
-
-2)Editing the /etc/sudoers File
-You can manually add an entry to the /etc/sudoers file:
-ALL=(ALL) ALL
 
