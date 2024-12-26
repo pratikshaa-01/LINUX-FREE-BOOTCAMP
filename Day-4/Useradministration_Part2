@@ -1,0 +1,43 @@
+###Some Advanced User Administration Commands:
+
+#usermod
+Use this command to modify a user's information.
+
+#usermod -g
+Change the user's primary group.
+
+#usermod -aG
+Add the user to a secondary group. (The -a flag ensures the user is added to the group without being removed from existing ones.)
+
+#usermod -s
+Change the user's default shell.
+
+#usermod -c
+Modify the user's comment field (e.g., full name or description).
+
+#usermod -u
+Change the user's UID (User ID).
+
+#chage
+Change the password aging information.
+
+#chage -l
+List the password expiration information for a user.
+
+###sudo (Super User Do)
+#There are two methods to grant a user sudo permissions:
+
+1.Using the Wheel Group
+Add the user to the wheel group to grant sudo permissions.
+Example:
+usermod -aG wheel Pratiksha
+
+2.Editing the /etc/sudoers File
+You can manually add an entry to the /etc/sudoers file to grant sudo access:
+ALL=(ALL) ALL
+
+Note: It is recommended to use visudo to safely edit the /etc/sudoers file, as it checks for syntax errors before saving.
+
+
+
+
